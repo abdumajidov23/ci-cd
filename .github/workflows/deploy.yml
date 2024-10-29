@@ -25,7 +25,7 @@ jobs:
           ssh $USER@HOST"
             if [ ! -d $APP_DIR]; then
               mkdir -p $APP_DIR
-              git clone https://github.com/Bakhadirov-Jaloliddin-25/cicd.git $APP_DIR
+              git clone https://github.com/abdumajidov23/ci-cd.git $APP_DIR
               echo `POST=${POST_}` > .env
             else
               cd $APP_DIR
@@ -37,4 +37,4 @@ jobs:
             pm2 restart ci_cd_app |pm2 start dist/main.js --name ci_cd_app 
           "
 
-        shell: bash 
+        shell: bash
