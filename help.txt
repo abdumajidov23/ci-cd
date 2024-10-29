@@ -1,0 +1,4 @@
+ssh-keygen -t rsa -b 4096 -C "alijonabdumajidov09@gmail.com"
+cat ~/.ssh/id_rsa.pub
+nano ~/.ssh/authorized_key
+cat ~/.ssh/ 
